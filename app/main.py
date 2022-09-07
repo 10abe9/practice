@@ -152,7 +152,7 @@ def edit_user(login, role=None, block=None, current_user: User = Depends(get_cur
 
 @app.get('/states/read/{state_id}/comment', tags=['comments'])
 def read_comment(state_id, current_user: User = Depends(get_current_active_user)):
-    """читаем комменты к статье"""
+    """читаем комменты к статье """
     return read_comments(current_user.username, state_id)
 
 
