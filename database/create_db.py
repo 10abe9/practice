@@ -31,5 +31,5 @@ db('''CREATE TABLE roles (
      reader boolean NOT NULL)''')
 
 
-db("""insert into users (login, password, access) values('admin', 'hashed123', True),
+db("""insert into users (login, password, access) values('admin', '123', True),
       insert into roles(login, admin, moder, writer, reader) values ('admin',True, True, True, True)""")
